@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500");
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* --------------------- Nav Bars ------------------------ */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 30px;
+  left: 30%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #333333;
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+nav li a:hover {
+  background-color: #111111;
+}
+
+@media only screen and (max-width: 940px) {
+    nav {
+        display: none;
+    }
+}
+
+/* --------------------- Side Bars ------------------------ */
+
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #042331;
+  transition: all 0.5s ease;
+}
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  line-height: 70px;
+  text-align: center;
+  background: #063146;
+  user-select: none;
+}
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid black;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: 0.4s;
+}
+.sidebar ul li:hover a {
+  padding-left: 50px;
+}
+.sidebar ul a i {
+  margin-right: 16px;
+}
+#check {
+  display: none;
+}
+header label #btn,
+header label #cancel {
+  position: fixed;
+  background: #042331;
+  border-radius: 3px;
+  cursor: pointer;
+}
+header label #btn {
+  left: 40px;
+  top: 60px;
+  font-size: 35px;
+  color: white;
+  padding: 6px 12px;
+  transition: all 0.5s;
+}
+header label #cancel {
+  z-index: 1111;
+  left: -195px;
+  top: 60px;
+  font-size: 30px;
+  color: #0a5275;
+  padding: 4px 9px;
+  transition: all 0.5s ease;
+}
+#check:checked ~ .sidebar {
+  left: 0;
+}
+#check:checked ~ label #btn {
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel {
+  left: 195px;
+}
+#check:checked ~ section {
+  margin-left: 250px;
+}
+header {
+  background: url("https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all 0.5s;
+}
+
+section {
+  background: url("https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  transition: all 0.5s;
+}
+
+/* --------------------- Social Buttons ------------------------ */
+
+.buttons {
+  display: flex;
+  width: 500px;
+  height: 200px;
+  align-items: center;
+}
+.buttons .row {
+  display: block;
+  margin-left: 100px;
+  padding-top: 150px;
+}
+.buttons .row button {
+  position: relative;
+  display: block;
+  height: 25px;
+  width: 100px;
+  margin: 10px 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 0 5px 5px 0;
+  transition: all 0s ease-out;
+}
+.row button:active {
+  top: 3px;
+}
+.row button.facebook,
+.row button.facebook span {
+  background: #3b5999;
+  border-left: 1px solid #2e4476;
+  box-shadow: 0px 5px 0px 0px #2e4476;
+}
+.row button.facebook:active {
+  box-shadow: 0px 2px 0px 0px #2e4476;
+}
+.row button.twitter,
+.row button.twitter span {
+  background: #46c1f6;
+  border-left: 1px solid #269bd0;
+  box-shadow: 0px 5px 0px 0px #269bd0;
+}
+.row button.twitter:active {
+  box-shadow: 0px 2px 0px 0px #269bd0;
+}
+.row button.instagram,
+.row button.instagram span {
+  background: #e1306c;
+  border-left: 1px solid #c91d56;
+  box-shadow: 0px 5px 0px 0px #c91d56;
+}
+.row button.instagram:active {
+  box-shadow: 0px 2px 0px 0px #c91d56;
+}
+.row button.youtube,
+.row button.youtube span {
+  background: #de463b;
+  border-left: 1px solid #c02b21;
+  box-shadow: 0px 5px 0px 0px #c02b21;
+}
+.row button.youtube:active {
+  box-shadow: 0px 2px 0px 0px #c02b21;
+}
+.row button span {
+  position: absolute;
+  height: 25px;
+  width: 60px;
+  top: 0;
+  left: -60px;
+  line-height: 25px;
+  font-size: 15px;
+  display: block;
+  font-weight: normal;
+  border-radius: 5px 0 0 5px;
+}
+.row button:active span {
+  top: -3px;
+}
+.row button.facebook span {
+  border-right: 1px solid #2e4476;
+}
+.row button.twitter span {
+  border-right: 1px solid #269bd0;
+}
+.row button.instagram span {
+  border-right: 1px solid #c91d56;
+}
+.row button.youtube span {
+  border-right: 1px solid #c02b21;
+}
+.row button.facebook:active span {
+  box-shadow: 0px 5px 0px 0px #2e4476, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.row button.twitter:active span {
+  box-shadow: 0px 5px 0px 0px #269bd0, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.row button.instagram:active span {
+  box-shadow: 0px 5px 0px 0px #c91d56, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
+.row button.youtube:active span {
+  box-shadow: 0px 5px 0px 0px #c02b21, 6px 4px 2px rgba(0, 0, 0, 0.3);
+}
