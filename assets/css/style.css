@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Rubik:100,200,300,400,500,600,700");
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 /*---------- Header ----------*/
 
@@ -106,4 +108,47 @@ header .video-intro {
 #features {
     background: rgb(203,153,126);
     background: linear-gradient(90deg, rgba(203,153,126,1) 10%, rgba(240,239,235,1) 100%);
+}
+
+
+/*---------- Scroll up - down ----------*/
+
+.header-scroll {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1111;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    color: #F0EFEB;
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+    -webkit-animation: MoveUpDown 1s linear infinite;
+            animation: MoveUpDown 1s linear infinite;
+}
+
+.header-scroll a{
+    color: #F0EFEB;
+}
+
+@-webkit-keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 1rem;
+  }
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 1rem;
+  }
+}
+
+.header-scroll>i {
+    font-size: 2rem;
 }
