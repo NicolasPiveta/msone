@@ -22,74 +22,92 @@
   </head>
 
   <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+      <div class="container">
+        <a href="#" class="navbar-brand text-uppercase font-weight-bold"
+          >Beach Hotel</a
+        >
+        <button
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+          aria-controls="navbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          class="navbar-toggler navbar-toggler-right"
+        >
+          <i class="fa fa-bars"></i>
+        </button>
+
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link text-uppercase font-weight-bold"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase font-weight-bold"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase font-weight-bold"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase font-weight-bold"
+                >Booking</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase font-weight-bold"
+                >Dropdown</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link text-uppercase font-weight-bold"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <header>
-      <nav>
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#download">Dashboard</a></li>
-          <li><a href="#contact">Shortcuts</a></li>
-          <li><a href="#download">Overview</a></li>
-          <li><a href="#contact">Events</a></li>
-          <li><a href="#contact">About</a></li>
-          <li><a href="#contact">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <input type="checkbox" id="check" />
-      <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-      </label>
-      <div class="sidebar">
-        <ul>
-          <li>
-            <a href="#"><i class="fas fa-qrcode"></i>Dashboard</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-link"></i>Shortcuts</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-stream"></i>Overview</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-calendar-week"></i>Events</a>
-          </li>
-          <li>
-            <a href="#"><i class="far fa-question-circle"></i>About</a>
-          </li>
-          <li>
-            <a href="#"><i class="fas fa-sliders-h"></i>Services</a>
-          </li>
-          <li>
-            <a href="#"><i class="far fa-envelope"></i>Contact</a>
-          </li>
-          <li>
-            <div class="buttons">
-              <div class="row">
-                <button class="facebook">
-                  <span><i class="fab fa-facebook-f"></i></span>
-                  Facebook
-                </button>
-                <button class="instagram">
-                  <span><i class="fab fa-instagram"></i></span>
-                  Instagram
-                </button>
-                <button class="twitter">
-                  <span><i class="fab fa-twitter"></i></span>
-                  Twitter
-                </button>
-                <button class="youtube">
-                  <span><i class="fab fa-youtube"></i></span>
-                  YouTube
-                </button>
-              </div>
-            </div>
-          </li>
-        </ul>
+      <div class="video-intro"></div>
+      <video
+        playsinline="playsinline"
+        autoplay="autoplay"
+        muted="muted"
+        loop="loop"
+      >
+        <source src="assets/videos/video-intro.mp4" type="video/mp4" />
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3">Hotel</h1>
+            <p class="lead mb-0">Luxury Beach Hotel</p>
+          </div>
+        </div>
       </div>
     </header>
 
-    <section><h1>test</h1></section>
+    <!-- Page Content -->
+    <section id="Features">
+      <div class="container">
+        <h1 class="font-weight-light">Features</h1>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius ipsum cupiditate atque. Blanditiis, asperiores distinctio ratione dolor excepturi ut quae iusto amet veniam, molestias doloribus debitis, deserunt esse neque? Doloribus consectetur ratione quaerat, qui est sit doloremque? Nobis nihil omnis quibusdam sequi corrupti illum illo eligendi, nesciunt ad, molestias dolores!
+        </p>
+      </div>
+    </section>
+ 
+  
 
     <footer></footer>
 
@@ -104,5 +122,7 @@
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
       crossorigin="anonymous"
     ></script>
+
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
