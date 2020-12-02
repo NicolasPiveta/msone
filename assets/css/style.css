@@ -1,14 +1,41 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Rubik:100,200,300,400,500,600,700");
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+/*---------- Commom Styling ----------*/
+
+h1,h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #39392d;
+}
+
+h3,h4,h5 {
+    font-family: 'Rubik', sans-serif;
+    color: #39392d;
+}
+
+p {
+    font-family: 'Rubik', sans-serif;
+    color: #f0efeb;
+}
+
+a {
+     font-family: 'Rubik', sans-serif;
+    color: #39392d;
+}
+
+.line {
+    border-top: 1px solid #39392d;
+    width: 90% !important
 }
 
 /*---------- Header ----------*/
 
 header {
   position: relative;
-  background-color: black;
+  background-color: #cb997e;
   height: 90vh;
   min-height: 25rem;
   width: 100%;
@@ -41,99 +68,91 @@ header .video-intro {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: #cb997e;
   opacity: 0.2;
   z-index: 1;
 }
 
-  /*---------- navbar ----------*/
+/*---------- navbar ----------*/
 
 .navbar {
-    transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .navbar .nav-link {
-    color: #F0EFEB;
+  color: #f0efeb;
 }
 
 .navbar .nav-link:hover,
 .navbar .nav-link:focus {
-    color: #F0EFEB;
-    text-decoration: none;
+  color: #f0efeb;
+  text-decoration: none;
 }
 
 .navbar .navbar-brand {
-    color: #F0EFEB;
+  color: #f0efeb;
+  font-size: 20px;
 }
-
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #CB997E;
-    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+  background: #cb997e;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .navbar.active .nav-link {
-    color: #F0EFEB;
+  color: #39392d;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #39392D;
-    text-decoration: none;
+  color: #f0efeb;
+  text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #F0EFEB;
+  color: #39392d;
 }
 .navbar.active .navbar-brand:hover {
-    color: #39392D;
+  color: #f0efeb;
 }
-
 
 /* Change navbar styling on small viewports */
-@media (max-width: 991.98px) {
-    .navbar {
-        background: #F0EFEB;
-    }
+@media (max-width: 990px) {
+  .navbar {
+    background: #cb997e;
+  }
 
-    .navbar .navbar-brand, .navbar .nav-link {
-        color: #39392D;
-    }
+  .navbar .navbar-brand,
+  .navbar .nav-link {
+    color: #39392d;
+  }
 }
-
-
-/*---------- Features ----------*/
-
-#features {
-    background: rgb(203,153,126);
-    background: linear-gradient(90deg, rgba(203,153,126,1) 10%, rgba(240,239,235,1) 100%);
-}
-
 
 /*---------- Scroll up - down ----------*/
 
 .header-scroll {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1111;
-    width: 100%;
-    max-width: 100%;
-    text-align: center;
-    color: #F0EFEB;
-    font-size: 1.5rem;
-    padding-bottom: 2rem;
-    -webkit-animation: MoveUpDown 1s linear infinite;
-            animation: MoveUpDown 1s linear infinite;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  color: #cb997e;
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  -webkit-animation: MoveUpDown 1s linear infinite;
+  animation: MoveUpDown 1s linear infinite;
 }
 
-.header-scroll a{
-    color: #F0EFEB;
+.header-scroll a {
+  color: #cb997e;
 }
 
 @-webkit-keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 0;
   }
   50% {
@@ -141,7 +160,8 @@ header .video-intro {
   }
 }
 @keyframes MoveUpDown {
-  0%, 100% {
+  0%,
+  100% {
     bottom: 0;
   }
   50% {
@@ -150,5 +170,182 @@ header .video-intro {
 }
 
 .header-scroll>i {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+/*---------- Features bar ----------*/
+
+.feature-bar {
+  background: rgb(203, 153, 126);
+  background: linear-gradient(
+    90deg,
+    rgba(203, 153, 126, 1) 20%,
+    rgba(240, 239, 235, 1) 100%
+  );
+  height: 15vh;
+}
+
+
+/*---------- Features ----------*/
+
+#features {
+  background: #f0efeb;
+  height: 100vh;
+}
+
+/*---------- Footer ----------*/
+
+
+
+.footer-pg
+{
+  background-color:#39392d;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#f0efeb;
+}
+.footer-pg hr
+{
+  border-top-color: #cb997e;
+  opacity:0.4
+}
+
+.footer-pg h6
+{
+  color:#f0efeb;
+  font-size:20px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#cb997e
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#A5A58D;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.footer-pg .social-icons
+{
+  text-align:right
+}
+.footer-pg .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#333328;
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .footer-pg [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .footer-pg
+  {
+    padding-bottom:0
+  }
+  .footer-pg .copyright-text,.footer-pg .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#f0efeb;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#f0efeb;
+  color:#f0efeb;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#f0efeb;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.youtube:hover
+{
+  background-color:#c4302b
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
 }
