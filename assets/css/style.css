@@ -46,7 +46,7 @@ header h1 {
 header p {
     font-size: 2rem;
     color: #39392d;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 header a {
@@ -105,6 +105,9 @@ header .video-intro {
   header h1 {
     font-size: 5em;
   }
+  header p, a {
+    font-size: 1em;
+  }  
 }
 
 @media (max-width: 475px) {
@@ -135,6 +138,23 @@ header .video-intro {
 .navbar .navbar-brand {
   color: #f0efeb;
   font-size: 20px;
+}
+
+.dropdown-menu {
+      background: #cb997e;  
+      font-size: 15px;
+}
+
+.dropdown-item {    
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #39392d;
+    text-transform: uppercase;
+}
+
+.dropdown-item:hover {
+    background-color: #39392d;
+    color: #f0efeb;
 }
 
 /* navbar styling on scroll */
@@ -225,7 +245,7 @@ header .video-intro {
     rgba(203, 153, 126, 1) 20%,
     rgba(240, 239, 235, 1) 100%
   );
-  height: 15vh;
+  height: 10vh;
 }
 
 
