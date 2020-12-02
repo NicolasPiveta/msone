@@ -22,14 +22,10 @@ p {
 }
 
 a {
-     font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #39392d;
 }
 
-.line {
-    border-top: 1px solid #39392d;
-    width: 90% !important
-}
 
 /*---------- Header ----------*/
 
@@ -40,6 +36,36 @@ header {
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
+}
+
+header h1 {
+    font-size: 4rem;
+    color: #39392d;
+}
+
+header p {
+    font-size: 2rem;
+    color: #39392d;
+    font-weight: 600;
+}
+
+header a {
+    font-size: 1.5rem;
+    font-weight: 700
+}
+
+.btn-header {
+    background-color: #cb997e;
+    color: #39392d;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+
+.btn-header:hover {
+    color: #f0efeb;
+    background-color: #39392d;
 }
 
 header video {
@@ -69,8 +95,25 @@ header .video-intro {
   height: 100%;
   width: 100%;
   background-color: #cb997e;
-  opacity: 0.2;
+  opacity: 0.4;
   z-index: 1;
+}
+
+/*---------- Header bouncer ----------*/
+
+@media (max-width: 759px) {
+  header h1 {
+    font-size: 5em;
+  }
+}
+
+@media (max-width: 475px) {
+ 
+  
+  header h1 {
+    font-size: 3.2em;
+  }
+  
 }
 
 /*---------- navbar ----------*/
@@ -94,7 +137,7 @@ header .video-intro {
   font-size: 20px;
 }
 
-/* Change navbar styling on scroll */
+/* navbar styling on scroll */
 .navbar.active {
   background: #cb997e;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
