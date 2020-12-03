@@ -11,7 +11,7 @@ h1,h2 {
     color: #39392d;
 }
 
-h3,h4,h5 {
+h3,h4,h5,h6 {
     font-family: 'Rubik', sans-serif;
     color: #39392d;
 }
@@ -360,9 +360,158 @@ header .video-intro {
 /*---------- Features ----------*/
 
 #features {
-  background: #f0efeb;
-  height: 80vh;
+  background: #FFF1E6;
+  height: 90vh;
 }
+
+#left-feature{
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+}
+
+#right-feature{
+    padding-top: 30px;
+    width:33%;
+    float: right;
+}
+
+#center-feature{
+    width: 33%;
+    margin:0 auto;
+}
+
+.left-feature-heading{
+    width: 50%;
+    float: right;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.left-feature-heading p {
+    color: black;
+}
+
+.right-feature-heading{
+    width:50%;
+    float:left;
+    line-height: 20px;
+    clear: both;
+    margin-bottom: 15px;
+}
+
+.right-feature-heading h2{
+    text-align: right;
+}
+
+
+.right-feature-heading p {
+    text-align: right;
+    color: black;
+}
+
+#feature-title{
+    padding: 50px 0 15px 0;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#feature-subtitle{
+    padding: 10px 0 50px 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#circle-bg{
+    width: 400px;
+    height: 400px;
+    padding:30px;
+    border-style: solid;
+    border-color:#cccccc;
+    border-width: 1px;
+    border-radius: 50%;
+    margin: 100px auto;
+
+}
+ 
+#circle-bg-img{
+    background: url("https://images.unsplash.com/photo-1533193773788-92826ee86674?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80") no-repeat center center;
+    height:100%;
+    width: auto;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1400px) {
+
+    #features {
+        width: auto;
+        height: 1300px;
+        margin: 0 auto; 
+    }
+    
+    
+    #feature-title {
+        padding: 30px 0;
+        margin-top: 0;
+    }
+    
+    #left-feature, #right-feature{
+        width: 100%;
+        float: left;
+        padding: 0;
+    }
+    
+    #center-feature {
+        clear: both;
+        width: 100%;
+    }
+    
+    hr {
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 943px) {
+ 
+    
+    #features {
+        width: auto;
+        height: 1300px;
+        margin: 0 auto; 
+    }
+
+  
+    .left-feature-heading,
+    .right-feature-heading {
+        width: inherit;
+        margin-bottom: 5px;
+    }
+    
+    .right-feature-heading h2,
+    .left-feature-heading h2 {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .right-feature-heading p,
+    .left-feature-heading p {
+        text-align: center;
+        padding: 0 20 0 20;
+    }     
+    #circle-bg{
+    width: 300px;
+    height: 300px;
+}
+
+
+
 
 /*---------- Footer ----------*/
 
