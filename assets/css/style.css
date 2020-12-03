@@ -40,12 +40,13 @@ header {
 
 header h1 {
     font-size: 4rem;
-    color: #39392d;
+    color: #000000;
+    text-transform: uppercase
 }
 
 header p {
     font-size: 2rem;
-    color: #39392d;
+    color: #000000;
     font-weight: 700;
 }
 
@@ -56,7 +57,7 @@ header a {
 
 .btn-header {
     background-color: #cb997e;
-    color: #39392d;
+    color: #000000;
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -249,11 +250,118 @@ header .video-intro {
 }
 
 
+/*---------- Welcome ----------*/
+
+#welcome {
+  background: #f0efeb;
+}
+
+.welcome-float {
+  padding: 5px 5px;
+  float: left;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#welcome .card-container {
+  overflow: hidden;
+}
+
+#welcome .card {
+  background-color: #F0EFEB;
+  color: #39392d;
+  min-height: 100%;
+  width: auto;
+  height: 90vh;
+  float: right;  
+  border: 15px solid #EDDCD2;
+}
+
+#welcome .card-title {
+  font-size: 2.5rem;
+  font-family: "Roboto";
+  text-align: center;
+  font-weight: 600;
+  padding-top: 20px;
+}
+
+#welcome .card-description-sub {
+  font-size: 1.2rem;
+  font-family: "Rubik";
+  text-align: center;
+  font-weight: 700;
+}
+
+#welcome .card-description {
+  padding: 30px;
+  font-size: 1.2rem;
+  font-family: "Rubik";
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+#welcome .card-image {
+  display: flex;  
+}
+
+#welcome div.card-image img {
+  width: 60%;
+  height: auto;
+}
+@media only screen and (max-width: 1490px) {
+    
+  #welcome .card-description {
+    padding: 15px; 
+    font-size: 1rem;
+    line-height: 25px;
+    }
+}
+@media only screen and (max-width: 1150px) {
+  #welcome div.card-image img {
+   width: 100%;
+   height: auto;
+  }  
+  #welcome .card-image {
+   flex-direction: column;
+  }
+  #welcome .card {
+   width: 100%;
+   height: auto;
+   margin-top: -4px;     
+  }  
+  #welcome .card-description {
+    padding: 20px; 
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #welcome div.card-image img {
+   width: 100%;
+   height: auto;
+  }  
+  #welcome .card-image {
+   flex-direction: column;
+  }
+  #welcome .card {
+   width: 100%;
+   height: auto;
+   margin-top: -4px;     
+  }  
+  #welcome .card-description {
+    padding: 5px; 
+    font-size: 15px;
+  }
+}
+
 /*---------- Features ----------*/
 
 #features {
   background: #f0efeb;
-  height: 100vh;
+  height: 80vh;
 }
 
 /*---------- Footer ----------*/
