@@ -25,7 +25,7 @@ p {
   color: #f0efeb;
 }
 
-a {
+a, span {
   font-family: "Rubik", sans-serif;
   color: #39392d;
 }
@@ -516,18 +516,15 @@ header .video-intro {
 /*---------- bedrooms ----------*/
 #bedrooms {
     background: #CB997E;
-    height: 90vh;
+    height: 80vh;
 }
 
 .bedroom-container {
   display: flex;
-  flex-wrap: wrap;
-  height: 500px;
-  width: auto;
 }
 
 #bedroom-title {
-  padding: 60px 0 60px 0;
+  padding: 60px 0 30px 0;
   text-align: center;
   font-size: 2.5rem;
   font-weight: 600;
@@ -536,19 +533,18 @@ header .video-intro {
 
 #bedrooms .container{
   position: relative;
-  left: 170px;
   height: 500px;
   width: 350px;
-  margin: 20px;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.8);
+  background: #FFF1E6;
+  box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.4);
   transition: 0.3s ease-out;
 }
 
 #bedrooms .container:hover{
-  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.1);
 }
+
 #bedrooms .container .image{
   background: #000;
   position: absolute;
@@ -558,6 +554,7 @@ header .video-intro {
   width: auto;
   z-index: 2;
   transition: transform 0.3s ease-out;
+  transform: translateY(-55px);
 }
 #bedrooms .container:hover .image{
   transform: translateY(-100px);
@@ -571,71 +568,117 @@ header .video-intro {
 #bedrooms .container:hover .image img{
   opacity: 0.7;
 }
-#bedrooms .container:hover .image{
- transform: translateY(-100px);
-}
-#bedrooms .container ul{
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 180%);
-  z-index: 3;
-  list-style: none;
-}
-#bedrooms ul li{
-  margin: 0 5px;
-}
-#bedrooms ul li a{
-  display: block;
-  height: 50px;
-  width: 50px;
-  color: #000;
-  line-height: 50px;
-  font-size: 20px;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translateY(200px);
-  background: #fff;
-  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
-}
-#bedrooms .container:hover > ul > li > a{
-  opacity: 1;
-  transform: translateY(0);
-}
 
 #bedrooms .container .content{
   position: relative;
   width: 100%;
   height: 100%;
-  background: #fff;
+  background: #F0EFEB;
+  border-bottom: 15px solid #FFF1E6;
 }
 #bedrooms .info{
   position: absolute;
-  bottom: 20px;
+  bottom: 2px;
   text-align: center;
   width: 100%;
-  color: red;
-  line-height: 26px;
-}
-#bedrooms .info h2{
-  font-size: 27px;
-  margin: 3px 0;
-}
-#bedrooms .info span{
-  color: #1a1a1a;
+  color: blue;
+  line-height: 50px;
 }
 
-@media screen and (max-width: 1400px) {
+#bedrooms .info h2{
+  font-size: 22px;
+  font-weight: 600;
+  margin: 3px 0;
+  text-transform: uppercase;  
+}
+
+#bedrooms .info span {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#bedrooms .next {
+  background-color: #DDBEA9;
+  color: #39392D;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 2px 11px;
+}
+
+#bedrooms .next:hover {
+    background-color: #EDDCD2;
+    text-decoration: none;
+}
+
+#bedrooms .round {
+  border-radius: 50%;
+}
+
+#bedrooms .container ul{
+  display: flex;
+  position: absolute;
+  top: 96%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  list-style: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 1435px) {
   #bedrooms {
-    width: auto;
-    height: 1300px;
-    margin: 0 auto;
+    height: auto;
+  }
+ #bedrooms .bedroom-container {
+  flex-wrap: wrap; 
+  }
+#bedrooms .container {
+  margin: 20px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 400px;
+  }
+  
+#bedrooms .container ul {
+  display: flex;
+  position: absolute;
+  top: 95%;
+  left: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+#bedrooms .container {
+  margin: 15px;
+  position: relative;
+  left: 46%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 300px;
+  }
+  #bedrooms .container ul {
+  display: flex;
+  position: absolute;
+  top: 94%;
+  left: 88%;
   }
 
-  
 }
 
+/*---------- testimonial ----------*/
+#testimonial-pg {
+    background: #f0efeb;
+    height: 50vh;
+}
+
+/*---------- bedrooms ----------*/
+#booking-pg {
+    background: #EDDCD2;
+    height: 50vh;
+}
 
 /*---------- Footer ----------*/
 
