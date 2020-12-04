@@ -442,7 +442,7 @@ header .video-intro {
 }
 
 #circle-bg-img:hover {
-  transform: scale(1.1); 
+  box-shadow: 0 16px 16px 0 rgba(0,0,0,0.6);
 }
 
 @media screen and (max-width: 1400px) {
@@ -515,9 +515,127 @@ header .video-intro {
 
 /*---------- bedrooms ----------*/
 #bedrooms {
-  background: #F0EFEB;
-  height: 50vh;
+    background: #CB997E;
+    height: 90vh;
 }
+
+.bedroom-container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 500px;
+  width: auto;
+}
+
+#bedroom-title {
+  padding: 60px 0 60px 0;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#bedrooms .container{
+  position: relative;
+  left: 170px;
+  height: 500px;
+  width: 350px;
+  margin: 20px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.8);
+  transition: 0.3s ease-out;
+}
+
+#bedrooms .container:hover{
+  box-shadow: 0px 1px 35px 0px rgba(0,0,0,0.3);
+}
+#bedrooms .container .image{
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: auto;
+  z-index: 2;
+  transition: transform 0.3s ease-out;
+}
+#bedrooms .container:hover .image{
+  transform: translateY(-100px);
+}
+#bedrooms .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-out;
+}
+#bedrooms .container:hover .image img{
+  opacity: 0.7;
+}
+#bedrooms .container:hover .image{
+ transform: translateY(-100px);
+}
+#bedrooms .container ul{
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 180%);
+  z-index: 3;
+  list-style: none;
+}
+#bedrooms ul li{
+  margin: 0 5px;
+}
+#bedrooms ul li a{
+  display: block;
+  height: 50px;
+  width: 50px;
+  color: #000;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(200px);
+  background: #fff;
+  transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+#bedrooms .container:hover > ul > li > a{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#bedrooms .container .content{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#bedrooms .info{
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  color: red;
+  line-height: 26px;
+}
+#bedrooms .info h2{
+  font-size: 27px;
+  margin: 3px 0;
+}
+#bedrooms .info span{
+  color: #1a1a1a;
+}
+
+@media screen and (max-width: 1400px) {
+  #bedrooms {
+    width: auto;
+    height: 1300px;
+    margin: 0 auto;
+  }
+
+  
+}
+
 
 /*---------- Footer ----------*/
 
