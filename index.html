@@ -46,7 +46,7 @@
 								<span class="sr-only">(current)</span></a>
 						</li>
 						<li class="nav-item">
-							<a href="#about" class="nav-link text-uppercase font-weight-bold">About</a>
+							<a href="#welcome-bar" class="nav-link text-uppercase font-weight-bold">About</a>
 						</li>
 						
 						<li class="nav-item dropdown">
@@ -56,48 +56,44 @@
 								Our rooms
 							</a>
 							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">Standard</a>
-								<a class="dropdown-item" href="#">Deluxe</a>
+								<a class="dropdown-item" href="#bedrooms">Standard</a>
+								<a class="dropdown-item" href="#bedrooms">Deluxe</a>
 								<div class="dropdown-divider"></div>
-								<a class="dropdown-item" href="#">Premium</a>
-								<a class="dropdown-item" href="#">Presidential</a>
+								<a class="dropdown-item" href="#bedrooms">Premium</a>
+								<a class="dropdown-item" href="#bedrooms">Presidential</a>
 							</div>
 						</li>
 						<li class="nav-item">
-							<a href="#booking" class="nav-link text-uppercase font-weight-bold">Booking</a>
+							<a href="#booking-pg" class="nav-link text-uppercase font-weight-bold">Booking</a>
 						</li>
 						<li class="nav-item">
-							<a href="#events" class="nav-link text-uppercase font-weight-bold">Events</a>
+							<a href="#event-pg" class="nav-link text-uppercase font-weight-bold">Events</a>
 						</li>
 						<li class="nav-item">
-							<a href="#contact" class="nav-link text-uppercase font-weight-bold">Contact</a>
+							<a href="#contact-pg" class="nav-link text-uppercase font-weight-bold">Contact</a>
 						</li>
 					</ul>
 				</div>
 		</div>
 	</nav>
 
-	<header>
+	<header id="home">
 		<div class="video-intro"></div>
 		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 			<source src="assets/videos/video-intro.mp4" type="video/mp4" />
 		</video>
 		<div class="container h-100">
 			<div class="d-flex h-100 text-center align-items-center">
-				<div class="w-100">
-
-					<h1 class="animated bounceInDown">Beach Hotel</h1>
-					<p class="animated bounceInLeft">The luxury way to enjoy life around the Sea </p>
-					<p class="animated bounceInLeft">Here you can find the best of everything</p>
+				<div class="w-100 intro-text">
+					<h1 class="animated bounceInDown title-bg">Beach Hotel</h1>
 					<p class="animated bounceInLeft">Experience the greatest hotel</p>
 					<p class="animated bounceInLeft">Come to visit us.</p>
-					<a
-						href="#features"><button type="button" class="btn btn-header animated bounceInUp">Discover now</button></a>
+					<a href="#bedrooms"><button type="button" class="btn btn-header animated bounceInUp">Discover now</button></a>
 				</div>
 			</div>
 		</div>
 		<div class="header-scroll">
-			<a href="#features">
+			<a href="#welcome-bar">
 				<i class="fas fa-chevron-down d-none d-lg-block"></i>
 				<i class="fas fa-chevron-down d-block d-lg-none"></i>
 				<span class="sr-only">Go to features</span>
@@ -190,7 +186,8 @@
         <div class="bedroom-container">
             <div class="container">
                 <div class="image">
-            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1350&q=80">
+                <img src="https://images.unsplash.com/photo-1560184897-502a475f7a0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1350&q=80">
+            
             </div>
             <div class="content">
             <div class="info">
@@ -226,7 +223,7 @@
     </div>
     <div class="container">
                 <div class="image">
-            <img src="https://images.unsplash.com/photo-1560184897-502a475f7a0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1350&q=80">
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1350&q=80">
             </div>
             <div class="content">
             <div class="info">
@@ -240,8 +237,10 @@
     
     </section>
 
-    <section id="testimonial-pg"></section>
-    <section id="booking-pg"></section>
+    <section id="testimonial-pg">testimonial</section>
+    <section id="booking-pg">booking</section>
+    <section id="event-pg">event</section>
+    <section id="contact-pg">contact</section>
 	<!-- Site footer -->
 	<footer class="footer-pg">
 		<div class="container">
