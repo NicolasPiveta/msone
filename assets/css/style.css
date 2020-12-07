@@ -118,8 +118,6 @@ header .video-intro {
   width: 100%;
 }
 
-/*---------- Header bouncer ----------*/
-
 @media (max-width: 900px) {
   header h1 {
     font-size: 2rem;
@@ -281,7 +279,6 @@ header .video-intro {
   color: #f0efeb;
 }
 
-/* Change navbar styling on small viewports */
 @media (max-width: 990px) {
   .navbar {
     background: #cb997e;
@@ -293,8 +290,7 @@ header .video-intro {
   }
 }
 
-
-/*---------- Features bar ----------*/
+/*---------- Welcome bar ----------*/
 
 .welcome-bar {
   background: rgb(203, 153, 126);
@@ -305,6 +301,59 @@ header .video-intro {
   );
   height: 10vh;
 }
+
+.welcome-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.welcome-bar .covidTitle {
+  font-size: 1.2rem;
+  font-family: "Roboto";
+  text-align: center;
+  font-weight: 600;
+  line-height: 25px;
+  max-width: 200px;
+  padding-bottom: 20px;
+}
+
+.welcome-bar .covidPage {
+  font-family: "Roboto";
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.welcome-bar .covidPage:hover {
+    color: #A5A58D;
+}
+
+.welcome-bar .container ul li {    
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 50px;
+}
+
+.welcome-bar .container ul li img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.welcome-bar .container ul li span {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 20px;
+  vertical-align: middle;
+}
+
+
 
 /*---------- Welcome ----------*/
 
