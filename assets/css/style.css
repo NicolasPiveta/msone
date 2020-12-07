@@ -256,7 +256,7 @@ header .video-intro {
   color: #f0efeb;
 }
 
-/* navbar styling on scroll */
+/* navbar on scroll */
 .navbar.active {
   background: #cb997e;
   box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
@@ -292,7 +292,7 @@ header .video-intro {
 
 /*---------- Welcome bar ----------*/
 
-.welcome-bar {
+#welcome-bar {
   background: rgb(203, 153, 126);
   background: linear-gradient(
     90deg,
@@ -302,9 +302,9 @@ header .video-intro {
   height: 10vh;
 }
 
-.welcome-bar .container {
+#welcome-bar .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -312,7 +312,7 @@ header .video-intro {
   padding-right: 0 !important;
 }
 
-.welcome-bar .covidTitle {
+#welcome-bar .covidTitle {
   font-size: 1.2rem;
   font-family: "Roboto";
   text-align: center;
@@ -322,30 +322,29 @@ header .video-intro {
   padding-bottom: 20px;
 }
 
-.welcome-bar .covidPage {
+#welcome-bar .covidPage {
   font-family: "Roboto";
   font-size: 12px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-.welcome-bar .covidPage:hover {
+#welcome-bar .covidPage:hover {
     color: #A5A58D;
 }
 
-.welcome-bar .container ul li {    
+#welcome-bar .container ul li {    
   display: inline-block;
   list-style-type: none;
   padding-right: 50px;
 }
 
-.welcome-bar .container ul li img {
+#welcome-bar .container ul li img {
   display: inline-block;
-  vertical-align: middle;
   margin-right: 10px;
 }
 
-.welcome-bar .container ul li span {
+#welcome-bar .container ul li span {
   display: inline-block;
   font-size: 15px;
   font-weight: 600;
@@ -353,8 +352,107 @@ header .video-intro {
   vertical-align: middle;
 }
 
+@media screen and (max-width: 1400px) {
+  #welcome-bar {
+   height: auto;
+  }
+  #welcome-bar .container {
+   width: 85%;
+  }
 
+  #welcome-bar .container ul {
+   display: flex;
+   margin: 0px;
+   padding: 0px;
+  }
+  
+  #welcome-bar .container ul li{
+   padding-left: 0px;
+   padding-right: 20px;
+  }
 
+  #welcome-bar .container ul li span{
+   font-size: 13px;
+  }
+ 
+  #welcome-bar .container ul li img {
+   padding-left: 15px;
+  }
+
+  #welcome-bar .covidTitle {
+   font-size: 1rem;
+   line-height: 20px;
+   padding-bottom: 0px;
+  }
+
+  #welcome-bar .covidPage {
+   font-size: 10px;
+  }
+
+} 
+
+@media screen and (max-width: 1030px) {
+  
+  #welcome-bar .container {
+   width: 95%;
+  }
+  
+  #welcome-bar .container ul li{
+   padding-right: 0px;
+  }
+  #welcome-bar .container ul li span{
+   font-size: 10px;
+   line-height: 15px;
+  }
+  #welcome-bar .container ul li img {
+   padding-left: 5px;
+   padding-bottom: 5px;
+   height: 40px;
+  }
+  
+  #welcome-bar .covidTitle {
+   font-size: 14px;
+   padding-right: 10px;
+  }
+  #welcome-bar .covidPage {
+   font-size: 9px;
+  }
+  
+} 
+
+@media screen and (max-width: 600px) {
+  
+  #welcome-bar .container {
+   width: 90%;
+   justify-content: center;
+  }
+  #welcome-bar .container ul li span {
+   font-size: 9px;
+   line-height: 10px;
+  }
+  #welcome-bar .container ul li img {
+   padding-left: 5px;
+   height: 35px;
+   text-align: center;
+  }
+  #welcome-bar .covidTitle {
+   font-size: 11px;
+   line-height: 15px;
+  }
+  #welcome-bar .covidPage {
+   font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    #welcome-bar .container {
+   width: 95%;
+  }
+  #welcome-bar .covidTitle {
+   font-size: 10px;
+   line-height: 12px;
+  }
+}
 /*---------- Welcome ----------*/
 
 #welcome {
