@@ -879,9 +879,71 @@ header .video-intro {
 
 /*---------- testimonial ----------*/
 #testimonial-pg {
-    background: #f0efeb;
-    height: 50vh;
+    background: #FFF1E6;
+    height: auto;
 }
+
+#testimonial-pg .subtitle {
+  color: #39392D;
+  line-height: 24px;
+}
+
+#testimonial-pg .card-body {
+  padding: 40px;
+  background: #EDDCD2;
+}
+
+#testimonial-pg .text {
+  font-weight: 500;
+}
+
+#testimonial-pg h6 {
+  line-height: 24px;
+}
+
+#testimonial-pg img {
+  width: 60px;
+  height: auto;
+}
+
+#testimonial-pg .customer {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+#testimonial-pg .stars {
+	font-size: 10px;
+}
+
+#testimonial-pg .icon-star:hover {
+    cursor: pointer;
+}
+
+#testimonial-pg .card-shadow {
+  -webkit-box-shadow: 0px 0px 20px rgba(237, 220, 210, 0.4);
+  box-shadow: 0px 0px 20px rgba(237, 220, 210, 0.4);
+}
+
+#testimonial-pg .text-success {
+    color: #2cdd9b !important;
+}
+
+#testimonial-pg .text-muted {
+    color: #39392D !important;
+}
+
+#testimonial-pg .owl-theme .owl-dots .owl-dot.active span,
+#testimonial-pg .owl-theme .owl-dots .owl-dot:hover span {
+  background: #39392D;
+  
+}
+
+@media screen and (max-width: 950px) {
+#testimonial-pg .icon-star {
+	font-size: 10px;
+ }
+} 
+
 
 /*---------- booking ----------*/
 #booking-pg {
