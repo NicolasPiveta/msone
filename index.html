@@ -2,635 +2,685 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beach Hotel</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-    <!-- Fontawesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
-    <!-- External Libraries -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet"
-        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
-        integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw=="
-        crossorigin="anonymous" />
-    <!-- local Style -->
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Favicon -->
-    <link href="assets/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Beach Hotel</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <!-- External Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" integrity="sha512-QKC1UZ/ZHNgFzVKSAhV5v5j73eeL9EEN289eKAEFaAjgAiobVAnVv/AGuPbXsKl1dNoel3kNr6PYnSiTzVVBCw=="
+    crossorigin="anonymous" />
+  <!-- local Style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Favicon -->
+  <link href="assets/icons/favicon.ico" rel="shortcut icon" type="image/x-icon">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top py-3">
-        <div class="container">
-            <a href="#" class="navbar-brand text-uppercase font-weight-bold">
-                <img src="assets/images/logo.png" height="30" class="d-inline-block align-top" alt=""
-                    loading="lazy">Beach Hotel
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top py-3">
+    <div class="container">
+      <a href="#" class="navbar-brand text-uppercase font-weight-bold">
+        <img src="assets/images/logo.png" height="30" class="d-inline-block align-top" alt="logo" loading="lazy">Beach Hotel
+      </a>
+      <button type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a href="#home" class="nav-link text-uppercase font-weight-bold">Home
+              <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a href="#welcome-bar" class="nav-link text-uppercase font-weight-bold">About</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Our rooms
             </a>
-            <button type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
-                aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right">
-                <i class="fa fa-bars"></i>
-            </button>
-
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a href="#home" class="nav-link text-uppercase font-weight-bold">Home
-                            <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#welcome-bar" class="nav-link text-uppercase font-weight-bold">About</a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown"
-                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Our rooms
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="standard.html">Standard</a>
-                            <a class="dropdown-item" href="deluxe.html">Deluxe</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="premium.html">Premium</a>
-                            <a class="dropdown-item" href="presidential.html">Presidential</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#booking-form" class="nav-link text-uppercase font-weight-bold">Booking</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#event-pg" class="nav-link text-uppercase font-weight-bold">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#contact-pg" class="nav-link text-uppercase font-weight-bold">Contact</a>
-                    </li>
-                </ul>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="standard.html">Standard</a>
+              <a class="dropdown-item" href="deluxe.html">Deluxe</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="premium.html">Premium</a>
+              <a class="dropdown-item" href="presidential.html">Presidential</a>
             </div>
-        </div>
-    </nav>
+          </li>
+          <li class="nav-item">
+            <a href="#event-pg" class="nav-link text-uppercase font-weight-bold">Events</a>
+          </li>
+          <li class="nav-item">
+            <a href="#booking-form" class="nav-link text-uppercase font-weight-bold">Booking</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact-pg" class="nav-link text-uppercase font-weight-bold">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <header id="home">
-        <div class="video-intro"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="assets/videos/video-intro.mp4" type="video/mp4" />
-        </video>
-        <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-                <div class="w-100 intro-text">
-                    <h1 class="animated bounceInDown title-bg">Beach Hotel</h1>
-                    <p class="animated bounceInLeft">Experience the greatest hotel</p>
-                    <p class="animated bounceInLeft">Come to visit us.</p>
-                    <a href="#bedrooms"><button type="button" class="btn btn-header animated bounceInUp">Discover
-                            now</button></a>
-                </div>
+  <header id="home">
+    <div class="video-intro"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="assets/videos/video-intro.mp4" type="video/mp4" />
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 intro-text">
+          <h1 class="animated bounceInDown title-bg">Beach Hotel</h1>
+          <p class="animated bounceInLeft">Experience the greatest hotel</p>
+          <p class="animated bounceInLeft">Come to visit us.</p>
+          <a href="#bedrooms">
+          <button type="submit" class="btn btn-header animated bounceInUp">Discover now</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-scroll">
+      <a href="#welcome-bar">
+        <i class="fas fa-chevron-down d-none d-lg-block"></i>
+        <i class="fas fa-chevron-down d-block d-lg-none"></i>
+        <span class="sr-only">Go to features</span>
+      </a>
+    </div>
+  </header>
+
+
+  <!-- Feature bar -->
+  <section id="welcome-bar">
+    <div class="container">
+      <div class="covidTitle">Covid - 19 <br> Safety Services</div>
+      <ul>
+        <li><img src="assets/images/safety.png" alt="safety protocol">
+          <span> New Safety <br> Protocol</span>
+        </li>
+        <li><img src="assets/images/wireless.png" alt="Contactless payment">
+          <span> Contactless <br> Payment</span>
+        </li>
+        <li><img src="assets/images/spray.png" alt="spray bottle">
+          <span> Cleaning<br> Standards </span>
+        </li>
+        <li><img src="assets/images/gel.png" alt="alcool gel bottle">
+          <span> Hygiene <br> First Priority</span>
+        </li>
+      </ul>
+      <a href="https://www2.hse.ie/coronavirus/" target="_blank" class="covidPage">Read More <i class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Feature Section -->
+  <section id="welcome" class="welcome">
+    <div class="card-container">
+      <div class="features-float">
+        <div class="card-image">
+          <img src="https://images.unsplash.com/photo-1527142879-95b61a0b8226?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80" alt="girl in the pool">
+          <div class="card">
+            <div class="card-title">Welcome to</div>
+            <div class="card-description-sub">
+              Beach Luxury Hotel, Resort & Spa Club,<br> Beach & Pool, Restaurant & Bar,<br> Dublin
+              Ireland!
             </div>
+            <div class="card-description">
+              The four-star Beach Hotel, is a family run independent hotel.
+              We first opened our door's in 1930 and have continued to grow
+              ever since. Having the pleasure of hosting many events including Weddings, Christenings
+              & Family gatherings and Corporate Events throughout the years.
+              you're sure to enjoy your visit to the Beach Hotel.
+              <hr>
+              A warm welcome awaits you on arrival to the hotel. Offering ideal leisure breaks,
+              The extensive recently refurbished 2020, The Beach Hotel Bar and The Beach Hotel Restaurant
+              offers excellent value in delicious wholesome food, sourced fresh from local suppliers where
+              possible.
+              <hr>
+              Enjoy some of the local attractions in this beautiful undulating countryside and
+              surrounding areas.
+              Get to know your family tree while on your break... Beach Hotel is the best place you
+              can visit today and tomorrow. We are waiting for you!
+            </div>
+          </div>
         </div>
-        <div class="header-scroll">
-            <a href="#welcome-bar">
-                <i class="fas fa-chevron-down d-none d-lg-block"></i>
-                <i class="fas fa-chevron-down d-block d-lg-none"></i>
-                <span class="sr-only">Go to features</span>
-            </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2 id="feature-title">Our Features</h2>
+    <div id="left-feature">
+      <div class="left-feature-heading">
+        <h2>Get Energy <i class="fas fa-heartbeat"></i></h2>
+        <hr>
+        <p>The oceans and seas have been changing lives since the dawn of time. Saline water is part of who we
+          are, even when it claims souls and dreams.</p>
+      </div>
+      <div class="left-feature-heading">
+        <h2>Warm Drinks <i class="fas fa-coffee"></i></h2>
+        <hr>
+        <p>A good and Warm coffee mug, is known to release endorphins in the brain. Endorphins make you more
+          energetic, more awake and, yes, happier.</p>
+      </div>
+      <div class="left-feature-heading">
+        <h2>Stay On <i class="fas fa-wifi"></i></h2>
+        <hr>
+        <p>Free Wifi can make you forget half of your life problems, come to visit us and enjoy our best wifi
+          connection.</p>
+      </div>
+    </div>
+    <div id="right-feature">
+      <div class="right-feature-heading">
+        <h2>Delicious Food <i class="fas fa-utensils"></i></h2>
+        <hr>
+        <p>The best food around, we can make really good dishes at our amazing Restaurant. We have a big order
+          menu to please you!</p>
+      </div>
+      <div class="right-feature-heading">
+        <h2>Cool Drinks <i class="fas fa-cocktail"></i></h2>
+        <hr>
+        <p>The really important things are said over cocktails and are never done. so come to our bar and Enjoy!
+        </p>
+      </div>
+      <div class="right-feature-heading">
+        <h2>Sea Around <i class="fas fa-water"></i></h2>
+        <hr>
+        <p>Dance with the waves, move with the sea, let the rhythm of the water set your soul free!.</p>
+      </div>
+    </div>
+    <div id="center-feature">
+      <div id="circle-bg">
+        <div id="circle-bg-img"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="bedrooms">
+    <h2 id="bedroom-title">Our Bedrooms</h2>
+    <div class="bedroom-container">
+      <div class="container">
+        <div class="image">
+          <img src="https://images.unsplash.com/photo-1560184897-502a475f7a0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1350&q=80" alt="bedroom"
+          >
+
         </div>
-    </header>
-
-
-    <!-- Feature bar -->
-    <section id="welcome-bar">
-        <div class="container">
-            <div class="covidTitle">Covid - 19 <br> Safety Services</div>
-            <ul>
-                <li><img src="assets/images/safety.png" alt="safety protocol">
-                    <span> New Safety <br> Protocol</span>
-                </li>
-                <li><img src="assets/images/wireless.png" alt="Contactless payment">
-                    <span> Contactless <br> Payment</span>
-                </li>
-                <li><img src="assets/images/spray.png" alt="spray bottle">
-                    <span> Cleaning<br> Standards </span>
-                </li>
-                <li><img src="assets/images/gel.png" alt="alcool gel bottle">
-                    <span> Hygiene <br> First Priority</span>
-                </li>
-            </ul>
-            <a href="https://www2.hse.ie/coronavirus/" target="_blank" class="covidPage">Read More <i
-                    class="fas fa-chevron-right"></i><i class="fas fa-chevron-right"></i></a>
+        <div class="content">
+          <div class="info">
+            <span><i class="fas fa-euro-sign"></i> 100 / Night</span>
+            <h2>Standard Suite</h2>
+          </div>
+          <ul>
+            <li><a href="standard.html" class="next round">&#8250;</a></li>
+          </ul>
         </div>
-    </section>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1353&q=80" alt="bedroom">
+        </div>
+        <div class="content">
+          <div class="info">
+            <span><i class="fas fa-euro-sign"></i> 150 / Night</span>
+            <h2>Deluxe Suite</h2>
+          </div>
+          <ul>
+            <li><a href="deluxe.html" class="next round">&#8250;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="https://images.unsplash.com/photo-1560184897-f1b9fd4e5d25?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1355&q=80" alt="bedroom">
+        </div>
+        <div class="content">
+          <div class="info">
+            <span><i class="fas fa-euro-sign"></i> 200 / Night</span>
+            <h2>Premium Suite</h2>
+          </div>
+          <ul>
+            <li><a href="premium.html" class="next round">&#8250;</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="image">
+          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1350&q=80" alt="bedroom">
+        </div>
+        <div class="content">
+          <div class="info">
+            <span><i class="fas fa-euro-sign"></i> 250 / Night</span>
+            <h2>Presidential Suite</h2>
+          </div>
+          <ul>
+            <li><a href="presidential.html" class="next round">&#8250;</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <!-- Feature Section -->
-    <section id="welcome" class="welcome">
-        <div class="card-container">
-            <div class="features-float">
-                <div class="card-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1527142879-95b61a0b8226?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1331&q=80">
-                    <div class="card">
-                        <div class="card-title">Welcome to</div>
-                        <div class="card-description-sub">
-                            Beach Luxury Hotel, Resort & Spa Club,<br> Beach & Pool, Restaurant & Bar,<br> Dublin
-                            Ireland!
-                        </div>
-                        <div class="card-description">
-                            The four-star Beach Hotel, is a family run independent hotel.
-                            We first opened our door's in 1930 and have continued to grow
-                            ever since. Having the pleasure of hosting many events including Weddings, Christenings
-                            & Family gatherings and Corporate Events throughout the years.
-                            you're sure to enjoy your visit to the Beach Hotel.
-                            <hr>
-                            A warm welcome awaits you on arrival to the hotel. Offering ideal leisure breaks,
-                            The extensive recently refurbished 2020, The Beach Hotel Bar and The Beach Hotel Restaurant
-                            offers excellent value in delicious wholesome food, sourced fresh from local suppliers where
-                            possible.
-                            <hr>
-                            Enjoy some of the local attractions in this beautiful undulating countryside and
-                            surrounding areas.
-                            Get to know your family tree while on your break... Beach Hotel is the best place you
-                            can visit today and tomorrow. We are waiting for you!
-                        </div>
+  </section>
+
+  <section id="testimonial-pg">
+    <div class="testimonial py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h4 class="mb-3 title">What our Customers are Saying about us..</h4>
+            <h6 class="subtitle">You can relay on our testimonial list and also <br> you can be part of it
+              after your stay without doubt!</h6>
+          </div>
+        </div>
+        <!-- Row  -->
+        <div class="owl-carousel owl-theme owl-testimonial mt-4">
+          <!-- item 1 -->
+          <div class="item">
+            <div class="card card-shadow border-0 mb-4">
+              <div class="card-body">
+                <h6 class="text mb-3">“Happiness consists of living each day as if it were the first day
+                  of your honeymoon and the last day of your vacation.”</h6>
+                <div class="d-block d-md-flex align-items-center">
+                  <span class="img-testi"><img src="https://pbs.twimg.com/profile_images/678416315225214977/yrGrcAt4.jpg" alt="Harrison Ford" class="rounded-circle" /></span>
+                  <div class="ml-3">
+                    <h6 class="mb-0 customer">Harrison Ford</h6>
+                    <div class="stars">
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <!-- item 1 -->
+          <!-- item 2 -->
+          <div class="item">
+            <div class="card card-shadow border-0 mb-4">
+              <div class="card-body">
+                <h6 class="text mb-3">”Spend eighty percent of your time focusing on the opportunities
+                  of tomorrow rather than the problems of yesterday.”</h6>
+                <div class="d-block d-md-flex align-items-center">
+                  <span class="img-testi"><img
+                      src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ed67918c6ade40006ffd6db%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D537%26cropX2%3D1617%26cropY1%3D0%26cropY2%3D1080"
+                      alt="Angelina Jolie" class="rounded-circle" /></span>
+                  <div class="ml-3">
+                    <h6 class="mb-0 customer">Angelina Jolie</h6>
+                    <div class="stars">
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-muted"><i class="icon-star"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item 2 -->
+          <!-- item 3 -->
+          <div class="item">
+            <div class="card card-shadow border-0 mb-4">
+              <div class="card-body">
+                <h6 class="text mb-3">“Success means having the courage, and the will
+                  to become the person you believe you were meant to be.”</h6>
+                <div class="d-block d-md-flex align-items-center">
+                  <span class="img-testi"><img src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTE4MDAzNDEwNDM1NzM3MTAy/jennifer-aniston-9185599-1-402.jpg" alt="Jennifer Aniston"
+                      class="rounded-circle" /></span>
+                  <div class="ml-3">
+                    <h6 class="mb-0 customer">Jennifer Aniston</h6>
+                    <div class="stars">
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-muted"><i class="icon-star"></i></a>
+                      <a class="text-muted"><i class="icon-star"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item 3 -->
+          <!-- item 4 -->
+          <div class="item">
+            <div class="card card-shadow border-0 mb-4">
+              <div class="card-body">
+                <h6 class="text mb-3">“Success is not the key to happiness. Happiness is the key to
+                  success. If you love what you are doing, you will be successful.”</h6>
+                <div class="d-block d-md-flex align-items-center">
+                  <span class="img-testi"><img src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F160027a2-e033-11e7-872d-4b5e82b139be.jpg?crop=1703%2C1703%2C548%2C378" alt="Bryan Cranston"
+                      class="rounded-circle" /></span>
+                  <div class="ml-3">
+                    <h6 class="mb-0 customer">Bryan Cranston</h6>
+                    <div class="stars">
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item 4 -->
+          <!-- item 5 -->
+          <div class="item">
+            <div class="card card-shadow border-0 mb-4">
+              <div class="card-body">
+                <h6 class="text mb-3">“Love recognizes no barriers. It jumps hurdles, leaps fences,
+                  penetrates walls to arrive at its destination full of hope.”</h6>
+                <div class="d-block d-md-flex align-items-center">
+                  <span class="img-testi"><img src="https://pbs.twimg.com/profile_images/1209872683791343621/jyNHTtaD_400x400.jpg" alt="Morgan Freeman" class="rounded-circle" /></span>
+                  <div class="ml-3">
+                    <h6 class="mb-0 customer">Morgan Freeman</h6>
+                    <div class="stars">
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-muted"><i class="icon-star"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item 5 -->
+          <!-- item 6 -->
+          <div class="item">
+            <div class="card card-shadow border-0 mb-4">
+              <div class="card-body">
+                <h6 class="text mb-3">“Sometimes our light goes out, but is blown again into instant
+                  flame by an encounter with another human being.”</h6>
+                <div class="d-block d-md-flex align-items-center">
+                  <span class="img-testi"><img src="https://www.biography.com/.image/t_share/MTczNjEwODI2NTg5MDg3MTI0/michelle-obama-gettyimages-85246899.jpg" alt="Michelle Obama" class="rounded-circle" /></span>
+                  <div class="ml-3">
+                    <h6 class="mb-0 customer">Michelle Obama</h6>
+                    <div class="stars">
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                      <a class="text-success"><i class="icon-star"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- item 6 -->
         </div>
-    </section>
+      </div>
+    </div>
 
-    <section id="features">
-        <h2 id="feature-title">Our Features</h2>
-        <div id="left-feature">
-            <div class="left-feature-heading">
-                <h2>Get Energy <i class="fas fa-heartbeat"></i></h2>
-                <hr>
-                <p>The oceans and seas have been changing lives since the dawn of time. Saline water is part of who we
-                    are, even when it claims souls and dreams.</p>
-            </div>
-            <div class="left-feature-heading">
-                <h2>Warm Drinks <i class="fas fa-coffee"></i></h2>
-                <hr>
-                <p>A good and Warm coffee mug, is known to release endorphins in the brain. Endorphins make you more
-                    energetic, more awake and, yes, happier.</p>
-            </div>
-            <div class="left-feature-heading">
-                <h2>Stay On <i class="fas fa-wifi"></i></h2>
-                <hr>
-                <p>Free Wifi can make you forget half of your life problems, come to visit us and enjoy our best wifi
-                    connection.</p>
-            </div>
+  </section>
+
+  <section id="event-bar">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <h4 class="mb-3 title"> Those are our Events Schedule</h4>
+          <h6 class="subtitle">You can enjoy our events every time you want <br> just come to reception and
+            sign up for it!</h6>
         </div>
-        <div id="right-feature">
-            <div class="right-feature-heading">
-                <h2>Delicious Food <i class="fas fa-utensils"></i></h2>
-                <hr>
-                <p>The best food around, we can make really good dishes at our amazing Restaurant. We have a big order
-                    menu to please you!</p>
-            </div>
-            <div class="right-feature-heading">
-                <h2>Cool Drinks <i class="fas fa-cocktail"></i></h2>
-                <hr>
-                <p>The really important things are said over cocktails and are never done. so come to our bar and Enjoy!
-                </p>
-            </div>
-            <div class="right-feature-heading">
-                <h2>Sea Around <i class="fas fa-water"></i></h2>
-                <hr>
-                <p>Dance with the waves, move with the sea, let the rhythm of the water set your soul free!.</p>
-            </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="event-pg">
+    <div>
+      <h2>Cocktail Night <i class="fas fa-cocktail"></i></h2>
+      <h3>Monday</h3>
+      <h3>At the Hotel Bar</h3>
+      <h3>20:00</h3>
+    </div>
+    <div>
+      <h2>Karaoke Night <i class="fas fa-users"></i></h2>
+      <h3>Wednesday</h3>
+      <h3>At the Hotel Restaurant</h3>
+      <h3>19:30</h3>
+    </div>
+    <div>
+      <h2>Kids Day <i class="fas fa-child"></i></h2>
+      <h3>Friday</h3>
+      <h3>At the Hotel Lobby</h3>
+      <h3>10:30</h3>
+    </div>
+    <div>
+      <h2>Hike <i class="fas fa-tree"></i></h2>
+      <h3>Saturday Morning</h3>
+      <h3>Front of the Hotel</h3>
+      <h3>09:00</h3>
+    </div>
+    <div>
+      <h2>Sunbath <i class="fas fa-umbrella-beach"></i></h2>
+      <h3>Sunday afternoon</h3>
+      <h3>At the Hotel Pool</h3>
+      <h3>15:30</h3>
+    </div>
+  </section>
+
+
+  <!-- Form Section -->
+  <section id="booking-form" class="booking-form">
+    <div class="container">
+      <div class="booking-title">
+        <h2>Room Reservation</h2>
+        <p>As soon as we get your details we can send your confirmation, thanks!</p>
+      </div>
+      <form>
+        <div class="form-row">
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="text" class="form-control" name="room" list="room" placeholder="Room Option">
+            <datalist id="room">
+              <option>Standard</option>
+              <option>Deluxe</option>
+              <option>Premium</option>
+              <option>Presidential</option>
+            </datalist>
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="date" name="date" class="form-control" id="date">
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="text" class="form-control" name="time" id="time" placeholder="check-in time">
+          </div>
+          <div class="col-lg-4 col-md-6 form-group">
+            <input type="number" class="form-control" name="people" id="people" placeholder="# of people">
+          </div>
         </div>
-        <div id="center-feature">
-            <div id="circle-bg">
-                <div id="circle-bg-img"></div>
-            </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
         </div>
-    </section>
+        <div class="text-center"><button type="submit">Book Now</button></div>
+      </form>
+    </div>
+  </section>
 
-    <section id="bedrooms">
-        <h2 id="bedroom-title">Our Bedrooms</h2>
-        <div class="bedroom-container">
-            <div class="container">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/photo-1560184897-502a475f7a0d?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1350&q=80">
 
-                </div>
-                <div class="content">
-                    <div class="info">
-                        <span><i class="fas fa-euro-sign"></i> 100 / Night</span>
-                        <h2>Standard Suite</h2>
-                    </div>
-                    <ul>
-                        <li><a href="standard.html" class="next round">&#8250;</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1353&q=80">
-                </div>
-                <div class="content">
-                    <div class="info">
-                        <span><i class="fas fa-euro-sign"></i> 150 / Night</span>
-                        <h2>Deluxe Suite</h2>
-                    </div>
-                    <ul>
-                        <li><a href="deluxe.html" class="next round">&#8250;</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/photo-1560184897-f1b9fd4e5d25?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1355&q=80">
-                </div>
-                <div class="content">
-                    <div class="info">
-                        <span><i class="fas fa-euro-sign"></i> 200 / Night</span>
-                        <h2>Premium Suite</h2>
-                    </div>
-                    <ul>
-                        <li><a href="premium.html" class="next round">&#8250;</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="container">
-                <div class="image">
-                    <img
-                        src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw=&auto=format&fit=crop&w=1350&q=80">
-                </div>
-                <div class="content">
-                    <div class="info">
-                        <span><i class="fas fa-euro-sign"></i> 250 / Night</span>
-                        <h2>Presidential Suite</h2>
-                    </div>
-                    <ul>
-                        <li><a href="presidential.html" class="next round">&#8250;</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-    </section>
-
-    <section id="testimonial-pg">
-        <div class="testimonial py-5">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 text-center">
-                        <h4 class="mb-3 title">What our Customers are Saying about us..</h4>
-                        <h6 class="subtitle">You can relay on our testimonial list and also <br> you can be part of it
-                            after your stay without doubt!</h6>
-                    </div>
-                </div>
-                <!-- Row  -->
-                <div class="owl-carousel owl-theme owl-testimonial mt-4">
-                    <!-- item 1 -->
-                    <div class="item">
-                        <div class="card card-shadow border-0 mb-4">
-                            <div class="card-body">
-                                <h6 class="text mb-3">“Happiness consists of living each day as if it were the first day
-                                    of your honeymoon and the last day of your vacation.”</h6>
-                                <div class="d-block d-md-flex align-items-center">
-                                    <span class="img-testi"><img
-                                            src="https://pbs.twimg.com/profile_images/678416315225214977/yrGrcAt4.jpg"
-                                            alt="Harrison Ford" class="rounded-circle" /></span>
-                                    <div class="ml-3">
-                                        <h6 class="mb-0 customer">Harrison Ford</h6>
-                                        <div class="stars">
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 1 -->
-                    <!-- item 2 -->
-                    <div class="item">
-                        <div class="card card-shadow border-0 mb-4">
-                            <div class="card-body">
-                                <h6 class="text mb-3">”Spend eighty percent of your time focusing on the opportunities
-                                    of tomorrow rather than the problems of yesterday.”</h6>
-                                <div class="d-block d-md-flex align-items-center">
-                                    <span class="img-testi"><img
-                                            src="https://thumbor.forbes.com/thumbor/fit-in/416x416/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5ed67918c6ade40006ffd6db%2F0x0.jpg%3Fbackground%3D000000%26cropX1%3D537%26cropX2%3D1617%26cropY1%3D0%26cropY2%3D1080"
-                                            alt="Angelina Jolie" class="rounded-circle" /></span>
-                                    <div class="ml-3">
-                                        <h6 class="mb-0 customer">Angelina Jolie</h6>
-                                        <div class="stars">
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-muted"><i class="icon-star"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 2 -->
-                    <!-- item 3 -->
-                    <div class="item">
-                        <div class="card card-shadow border-0 mb-4">
-                            <div class="card-body">
-                                <h6 class="text mb-3">“Success means having the courage, and the will
-                                    to become the person you believe you were meant to be.”</h6>
-                                <div class="d-block d-md-flex align-items-center">
-                                    <span class="img-testi"><img
-                                            src="https://www.biography.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTE4MDAzNDEwNDM1NzM3MTAy/jennifer-aniston-9185599-1-402.jpg"
-                                            alt="Jennifer Aniston" class="rounded-circle" /></span>
-                                    <div class="ml-3">
-                                        <h6 class="mb-0 customer">Jennifer Aniston</h6>
-                                        <div class="stars">
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-muted"><i class="icon-star"></i></a>
-                                            <a class="text-muted"><i class="icon-star"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 3 -->
-                    <!-- item 4 -->
-                    <div class="item">
-                        <div class="card card-shadow border-0 mb-4">
-                            <div class="card-body">
-                                <h6 class="text mb-3">“Success is not the key to happiness. Happiness is the key to
-                                    success. If you love what you are doing, you will be successful.”</h6>
-                                <div class="d-block d-md-flex align-items-center">
-                                    <span class="img-testi"><img
-                                            src="https://www.thetimes.co.uk/imageserver/image/%2Fmethode%2Ftimes%2Fprod%2Fweb%2Fbin%2F160027a2-e033-11e7-872d-4b5e82b139be.jpg?crop=1703%2C1703%2C548%2C378"
-                                            alt="Bryan Cranston" class="rounded-circle" /></span>
-                                    <div class="ml-3">
-                                        <h6 class="mb-0 customer">Bryan Cranston</h6>
-                                        <div class="stars">
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 4 -->
-                    <!-- item 5 -->
-                    <div class="item">
-                        <div class="card card-shadow border-0 mb-4">
-                            <div class="card-body">
-                                <h6 class="text mb-3">“Love recognizes no barriers. It jumps hurdles, leaps fences,
-                                    penetrates walls to arrive at its destination full of hope.”</h6>
-                                <div class="d-block d-md-flex align-items-center">
-                                    <span class="img-testi"><img
-                                            src="https://pbs.twimg.com/profile_images/1209872683791343621/jyNHTtaD_400x400.jpg"
-                                            alt="Morgan Freeman" class="rounded-circle" /></span>
-                                    <div class="ml-3">
-                                        <h6 class="mb-0 customer">Morgan Freeman</h6>
-                                        <div class="stars">
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-muted"><i class="icon-star"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 5 -->
-                    <!-- item 6 -->
-                    <div class="item">
-                        <div class="card card-shadow border-0 mb-4">
-                            <div class="card-body">
-                                <h6 class="text mb-3">“Sometimes our light goes out, but is blown again into instant
-                                    flame by an encounter with another human being.”</h6>
-                                <div class="d-block d-md-flex align-items-center">
-                                    <span class="img-testi"><img
-                                            src="https://www.biography.com/.image/t_share/MTczNjEwODI2NTg5MDg3MTI0/michelle-obama-gettyimages-85246899.jpg"
-                                            alt="Michelle Obama" class="rounded-circle" /></span>
-                                    <div class="ml-3">
-                                        <h6 class="mb-0 customer">Michelle Obama</h6>
-                                        <div class="stars">
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                            <a class="text-success"><i class="icon-star"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- item 6 -->
-                </div>
+  <section id="contact-pg" class="contact-pg">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>Contact us</h2>
+      </div>
+      <div>
+        <iframe style="border:3px solid #39392D; width: 100%; height: 270px;"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2381.51453697217!2d-6.2632807840232445!3d53.35194588199275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e869f3ecf2f%3A0x52351ba3ab63e170!2sO&#39;Connell%20Street%20Upper%2C%20North%20City%2C%20Dublin!5e0!3m2!1sen!2sie!4v1607715076765!5m2!1sen!2sie"
+           allowfullscreen></iframe>
+      </div>
+      <div class="row mt-5">
+        <div class="col-lg-4">
+          <div class="info">
+            <div class="address">
+              <i class="fas fa-map-marker-alt"></i>
+              <h4>Location:</h4>
+              <p>O'Connell Street , Dublin, Ireland</p>
             </div>
+            <div class="email">
+              <i class="fas fa-envelope"></i>
+              <h4>Email:</h4>
+              <p>dublin@example.com</p>
+            </div>
+            <div class="phone">
+              <i class="fas fa-phone"></i>
+              <h4>Call:</h4>
+              <p>+353 012 34 56789</p>
+            </div>
+          </div>
         </div>
 
-    </section>
-
-    <section id="event-bar">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 text-center">
-                    <h4 class="mb-3 title"> Those are our Events Schedule</h4>
-                    <h6 class="subtitle">You can enjoy our events every time you want <br> just come to reception and
-                        sign up for it!</h6>
-                </div>
+        <div class="col-lg-8 mt-5 mt-lg-0">
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" />
+              </div>
+              <div class="col-md-6 form-group">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" />
+              </div>
             </div>
-        </div>
-    </section>
-
-    <section id="event-pg">
-        <div>
-            <h2>Cocktail Night <i class="fas fa-cocktail"></i></h2>
-            <h3>Monday</h3>
-            <h3>At the Hotel Bar</h3>
-            <h3>20:00</h3>
-        </div>
-        <div>
-            <h2>Karaoke Night <i class="fas fa-users"></i></h2>
-            <h3>Wednesday</h3>
-            <h3>At the Hotel Restaurant</h3>
-            <h3>19:30</h3>
-        </div>
-        <div>
-            <h2>Kids Day <i class="fas fa-child"></i></h2>
-            <h3>Friday</h3>
-            <h3>At the Hotel Lobby</h3>
-            <h3>10:30</h3>
-        </div>
-        <div>
-            <h2>Hike <i class="fas fa-tree"></i></h2>
-            <h3>Saturday Morning</h3>
-            <h3>Front of the Hotel</h3>
-            <h3>09:00</h3>
-        </div>
-        <div>
-            <h2>Sunbath <i class="fas fa-umbrella-beach"></i></h2>
-            <h3>Sunday afternoon</h3>
-            <h3>At the Hotel Pool</h3>
-            <h3>15:30</h3>
-        </div>
-    </section>
-
-
-    <!-- Form Section -->
-    <section id="booking-form" class="booking-form">
-        <div class="container">
-            <div class="booking-title">
-                <h2>Room Reservation</h2>
-                <p>As soon as we get your details we can send your confirmation, thanks!</p>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
             </div>
-            <form>
-                <div class="form-row">
-                    <div class="col-lg-4 col-md-6 form-group">
-                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name">
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group">
-                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group">
-                        <input type="text" class="form-control" name="room" list="room" placeholder="Room Option">
-                        <datalist id="room">
-                            <option>Standard</option>
-                            <option>Deluxe</option>
-                            <option>Premium</option>
-                            <option>Presidential</option>
-                        </datalist>
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group">
-                        <input type="date" name="date" class="form-control" id="date" placeholder="Date">
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group">
-                        <input type="text" class="form-control" name="time" id="time" placeholder="check-in time">
-                    </div>
-                    <div class="col-lg-4 col-md-6 form-group">
-                        <input type="number" class="form-control" name="people" id="people" placeholder="# of people">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" name="message" rows="3" placeholder="Message"></textarea>
-                </div>
-                <div class="text-center"><button type="submit">Book Now</button></div>
-            </form>
-        </div>
-    </section>
-
-    <section id="contact-pg">contact</section>
-
-
-    <!-- Site footer -->
-    <footer class="footer-pg">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <h6>Beach Hotel</h6>
-                    <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem ipsa
-                        molestiae! Expedita dolores dolore adipisci deserunt est suscipit soluta fugiat? Voluptate enim
-                        non atque aliquam amet sed soluta, eveniet laudantium asperiores, consequatur ab molestiae
-                        tempora, totam iusto. Debitis esse saepe ipsa neque illo aut itaque, quo nesciunt odit nobis!.
-                    </p>
-                </div>
-
-                <div class="col-xs-6 col-md-3">
-                    <h6>Our Rooms</h6>
-                    <ul class="footer-links">
-                        <li><a href="standard.html">Standard</a></li>
-                        <li><a href="deluxe.html">Deluxe</a></li>
-                        <li><a href="premium.html">Premium</a></li>
-                        <li><a href="presidential.html">Presidential</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-xs-6 col-md-3">
-                    <h6>Quick Links</h6>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#welcome-bar">About</a></li>
-                        <li><a href="#booking-pg">Booking</a></li>
-                        <li><a href="#contact-pg">Contact</a></li>
-                    </ul>
-                </div>
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="3" data-rule="required" placeholder="Message"></textarea>
             </div>
-            <hr>
+            <div class="text-center"><button type="submit">Send Message</button></div>
+          </form>
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
-                        Nicolas Piveta.
-                    </p>
-                </div>
+      </div>
+    </div>
+  </section>
 
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                        <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
-                                    class="fab fa-facebook"></i></a></li>
-                        <li><a class="twitter" href="https://twitter.com/" target="_blank"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a class="youtube" href="https://www.youtube.com/" target="_blank"><i
-                                    class="fab fa-youtube"></i></a></li>
-                        <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank"><i
-                                    class="fab fa-linkedin"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+
+  <!-- Site footer -->
+  <footer class="footer-pg">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>Beach Hotel</h6>
+          <p class="text-justify">The four-star Beach Hotel, is a family run independent hotel. We first
+            opened our door's in 1930 and have continued to grow ever since. Having the pleasure of hosting
+            many events including Weddings, Christenings & Family gatherings and Corporate Events throughout
+            the years. you're sure to enjoy your visit to the Beach Hotel.
+          </p>
         </div>
 
-    </footer>
+        <div class="col-xs-6 col-md-3">
+          <h6>Our Rooms</h6>
+          <ul class="footer-links">
+            <li><a href="standard.html">Standard</a></li>
+            <li><a href="deluxe.html">Deluxe</a></li>
+            <li><a href="premium.html">Premium</a></li>
+            <li><a href="presidential.html">Presidential</a></li>
+          </ul>
+        </div>
 
-    <!-- Owl Carousel Script -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
-    <script type="text/javascript">
-        $('.owl-testimonial').owlCarousel({
-            loop: true,
-            margin: 30,
-            nav: false,
-            dots: true,
-            autoplay: true,
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    items: 1,
-                    nav: false
-                },
-                1024: {
-                    items: 3
-                }
-            }
-        });
-    </script>
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#welcome-bar">About</a></li>
+            <li><a href="#booking-form">Booking</a></li>
+            <li><a href="#contact-pg">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2020 All Rights Reserved by
+            Nicolas Piveta.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a class="linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Back to top Script -->
+  <button onclick="topFunction()" id="backBtn" title="Go to top"> <i class="fas fa-chevron-up"></i></button>
+
+  <script>
+    var mybutton = document.getElementById("backBtn");
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
+
+
+  <!-- Owl Carousel Script -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
+  <script type="text/javascript">
+    $('.owl-testimonial').owlCarousel({
+      loop: true,
+      margin: 30,
+      nav: false,
+      dots: true,
+      autoplay: true,
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false
+        },
+        1024: {
+          items: 3
+        }
+      }
+    });
+  </script>
 
 
 
-    <!-- jQuery and JS bundle w/ Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
-        </script>
-    <script src="assets/js/main.js"></script>
+  <!-- jQuery and JS bundle w/ Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous">
+  </script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
