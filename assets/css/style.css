@@ -45,7 +45,6 @@ a, span {
 
 header {
   position: relative;
-  background-color: #cb997e;
   height: 90vh;
   min-height: 25rem;
   width: 100%;
@@ -936,7 +935,6 @@ header .video-intro {
 #testimonial-pg .subtitle {
   color: #39392D;
   text-transform: uppercase;
-  line-height: 24px;
 }
 
 #testimonial-pg .card-body {
@@ -994,6 +992,19 @@ header .video-intro {
   }
 }
 
+@media screen and (max-width: 500px) {
+    
+  #testimonial-pg .title {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+  #testimonial-pg .subtitle {
+  font-size: 13px;
+  font-weight: 600;
+}
+}
+
 /*---------- Event Bar ----------*/
 
 #event-bar {
@@ -1007,7 +1018,7 @@ header .video-intro {
   text-transform: uppercase;
 }
 
-#event-bar .subtitle {  
+#event-bar .subtitle { 
   font-weight: 500;
   text-transform: uppercase;
 }
@@ -1020,7 +1031,7 @@ header .video-intro {
 }
 
 #event-bar .subtitle {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
 }
 }
@@ -1077,7 +1088,7 @@ header .video-intro {
 .booking-form  {
   width: 100%;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
-  padding: 30px;
+  padding: 55px;
 }
 
 .booking-title h2, .booking-title p{
