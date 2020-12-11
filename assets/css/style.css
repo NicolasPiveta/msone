@@ -1,10 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700|Rubik:100,200,300,400,500,600,700");
 
+/*  Color Palette
+Antique Brass:      #CB997E
+Champagne Pink:     #EDDCD2
+Linen:              #FFF1E6
+Isabelline:         #F0EFEB
+Desert Sand:        #DDBEA9
+Artichoke:          #A5A58D
+Black Olives:       #39392D 
+*/
+
+
 html {
   scroll-behavior: smooth;
 }
 
 /*---------- Commom Styling ----------*/
+
 h1,
 h2 {
   font-family: "Roboto", sans-serif;
@@ -29,7 +41,8 @@ a, span {
   color: #39392d;
 }
 
-/*---------- Header ----------*/
+/*---------- Header Section ----------*/
+
 header {
   position: relative;
   background-color: #cb997e;
@@ -180,6 +193,7 @@ header .video-intro {
 }
 
 /*---------- Scroll up - down ----------*/
+
 .header-scroll {
   position: absolute;
   bottom: 0;
@@ -231,7 +245,8 @@ header .video-intro {
   font-size: 2rem;
 }
 
-/*---------- navbar ----------*/
+/*---------- Navbar ----------*/
+
 .navbar {
   transition: all 0.4s;
 }
@@ -303,7 +318,8 @@ header .video-intro {
   }
 }
 
-/*---------- Welcome bar ----------*/
+/*---------- Welcome Bar ----------*/
+
 #welcome-bar {
   background: rgb(203, 153, 126);
   background: linear-gradient(90deg,
@@ -469,7 +485,8 @@ header .video-intro {
   }
 }
 
-/*---------- Welcome ----------*/
+/*---------- Welcome Section ----------*/
+
 #welcome {
   background: #f0efeb;
 }
@@ -577,7 +594,8 @@ header .video-intro {
   }
 }
 
-/*---------- Features ----------*/
+/*---------- Feature Section ----------*/
+
 #features {
   background: #fff1e6;
   height: 80vh;
@@ -736,7 +754,8 @@ header .video-intro {
   }
 }
 
-/*---------- bedrooms ----------*/
+/*---------- Bedroom Section ----------*/
+
 #bedrooms {
   background: #CB997E;
   height: 80vh;
@@ -809,7 +828,6 @@ header .video-intro {
   bottom: 2px;
   text-align: center;
   width: 100%;
-  color: blue;
   line-height: 50px;
 }
 
@@ -903,14 +921,21 @@ header .video-intro {
   }
 }
 
-/*---------- testimonial ----------*/
+/*---------- Testimonial Section ----------*/
+
 #testimonial-pg {
   background: #FFF1E6;
   height: auto;
 }
 
+#testimonial-pg .title {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 #testimonial-pg .subtitle {
   color: #39392D;
+  text-transform: uppercase;
   line-height: 24px;
 }
 
@@ -969,25 +994,139 @@ header .video-intro {
   }
 }
 
-/*---------- booking ----------*/
-#booking-pg {
+/*---------- Event Bar ----------*/
+
+#event-bar {
   background: #EDDCD2;
-  height: 50vh;
+  height: 20vh;
 }
 
-/*---------- event ----------*/
+#event-bar .title {
+  padding-top: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#event-bar .subtitle {  
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+@media screen and (max-width: 500px) {
+    
+  #event-bar .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#event-bar .subtitle {
+  font-size: 12px;
+  font-weight: 600;
+}
+}
+
+
+/*---------- Event Section ----------*/
+
 #event-pg {
-  background: #f0efeb;
-  height: 50vh;
+    background-image: url("https://images.unsplash.com/photo-1590435768306-1c1b0561f73c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2275&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+#event-pg div{
+    color: #F0EFEB;
+    background-color: rgba(0,0,0, .4);
+    width: 19.5%;
+    height: 400px;
+    float: left;
+    padding: 50px 0 0 5px;
+    text-align: center;
+    margin-right: 5px;
+    margin-left: 2px;
+}
+
+#event-pg h2, h3{
+    font-size: 1.5rem;
+    color:#F0EFEB;
+}
+
+@media screen and (max-width: 1400px) {
+    #event-pg div{
+        width: 100%;
+        clear: both;
+        height: 150px;
+        border-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #F0EFEB;
+        padding: 10px 0 0 0;
+    }
+}
+
+
+/*---------- Booking Form ----------*/
+
+#booking-form {
+  background: #EDDCD2;
+  height: auto;
+}
+
+.booking-form  {
+  width: 100%;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
+  padding: 30px;
+}
+
+.booking-title h2, .booking-title p{
+  color: #39392D;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.booking-form .form-group {
+  padding-bottom: 5px;
+}
+
+.booking-form textarea {
+  border-radius: 10px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.booking-form input {
+  height: 40px;
+}
+
+.booking-form textarea {
+  padding: 10px 12px;
+}
+
+.booking-form button {
+  background: #CB997E;
+  border: 0;
+  padding: 10px 30px;
+  color: #39392D;
+  font-weight: 700;
+  border-radius: 20px;
+}
+
+.booking-form button:hover {
+  background: #39392D;
+  color: #F0EFEB;
 }
 
 /*---------- contact ----------*/
+
 #contact-pg {
-  background: #EDDCD2;
+  background: #F0EFEB;
   height: 50vh;
 }
 
 /*---------- Footer ----------*/
+
 .footer-pg {
   background-color: #39392d;
   padding: 45px 0 20px;
@@ -1224,58 +1363,4 @@ header .video-intro {
   filter: grayscale(100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
-
-
-/*---------- Form bottom ----------*/
-
-#booking-form {
-  background: #EDDCD2;
-  height: auto;
-}
-
-.booking-form  {
-  width: 100%;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.12);
-  padding: 30px;
-}
-
-.booking-title h2, .booking-title p{
-  color: #39392D;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.booking-form .form-group {
-  padding-bottom: 5px;
-}
-
-.booking-form textarea {
-  border-radius: 10px;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.booking-form input {
-  height: 40px;
-}
-
-.booking-form textarea {
-  padding: 10px 12px;
-}
-
-.booking-form button {
-  background: #CB997E;
-  border: 0;
-  padding: 10px 30px;
-  color: #39392D;
-  font-weight: 700;
-  transition: 0.7s;
-  border-radius: 20px;
-}
-
-.booking-form button:hover {
-  background: #39392D;
-  color: #F0EFEB;
-}
-
 
