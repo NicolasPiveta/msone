@@ -325,7 +325,7 @@ header .video-intro {
 
 /*---------- Welcome Bar ----------*/
 #welcome-bar {
-  background: rgb(203, 153, 126);  
+  background: rgb(203, 153, 126);
   background: linear-gradient(90deg,
       rgba(203, 153, 126, 1) 20%,
       rgba(240, 239, 235, 1) 100%);
@@ -1044,7 +1044,7 @@ header .video-intro {
 
 #event-pg div {
   color: #F0EFEB;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .2);
   width: 19.5%;
   height: 400px;
   float: left;
@@ -1374,14 +1374,14 @@ header .video-intro {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 20px;
   z-index: 99;
   border: none;
   outline: none;
   background-color: #A5A58D;
   color: #39392D;
   cursor: pointer;
-  padding: 12px;
+  padding: 6px 8px;
   border-radius: 10px;
 }
 
@@ -1393,6 +1393,16 @@ header .video-intro {
 #backBtn:hover {
   background-color: #22221B;
   color: #F0EFEB;
+}
+
+@media (max-width: 500px) {
+  #backBtn {
+    padding: 4px 8px;
+  }
+
+  #backBtn i {
+    font-size: 16px;
+  }
 }
 
 /*---------- Standard Header ----------*/
@@ -1471,6 +1481,246 @@ header .video-intro {
 }
 
 #standard-pg .row img:hover {
+  filter: grayscale(100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+/*---------- Deluxe Header ----------*/
+#deluxe-header .deluxe-title {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#deluxe-header .title {
+  font-size: 2rem;
+  color: #39392D;
+  padding-top: 10px;
+}
+
+#deluxe-header .subtitle {
+  font-size: 1.2rem;
+  color: #39392D;
+}
+
+@media (max-width: 500px) {
+  #deluxe-header .title {
+    font-size: 1.5rem;
+    color: #39392D;
+    padding-top: 30px;
+  }
+
+  #deluxe-header .subtitle {
+    font-size: 1rem;
+    line-height: 20px;
+    color: #39392D;
+  }
+}
+
+/*---------- Deluxe Title ----------*/
+#deluxe-title {
+  background: #FFF1E6;
+  height: auto;
+  padding-top: 8vh;
+  padding-bottom: 5vh;
+}
+
+#deluxe-title .title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #39392D;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#deluxe-title .subtitle p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #39392D;
+  text-align: left;
+}
+
+#deluxe-title .subtitle ul {
+  font-size: 14px;
+  font-weight: 500;
+  color: #39392D;
+  text-align: left;
+}
+
+/*---------- Deluxe Pg = photos ----------*/
+#deluxe-pg {
+  background: #FFF1E6;
+  height: auto;
+}
+
+#deluxe-pg .row img {
+  border-radius: 5px;
+}
+
+#deluxe-pg .row img:hover {
+  filter: grayscale(100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+/*---------- Premium Header ----------*/
+#premium-header .premium-title {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://images.unsplash.com/flagged/photo-1573168710865-2e4c680d921a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#premium-header .title {
+  font-size: 2rem;
+  color: #39392D;
+  padding-top: 10px;
+}
+
+#premium-header .subtitle {
+  font-size: 1.2rem;
+  color: #39392D;
+}
+
+@media (max-width: 500px) {
+  #premium-header .title {
+    font-size: 1.5rem;
+    color: #39392D;
+    padding-top: 30px;
+  }
+
+  #premium-header .subtitle {
+    font-size: 1rem;
+    line-height: 20px;
+    color: #39392D;
+  }
+}
+
+/*---------- Premium Title ----------*/
+#premium-title {
+  background: #FFF1E6;
+  height: auto;
+  padding-top: 8vh;
+  padding-bottom: 5vh;
+}
+
+#premium-title .title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #39392D;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#premium-title .subtitle p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #39392D;
+  text-align: left;
+}
+
+#premium-title .subtitle ul {
+  font-size: 14px;
+  font-weight: 500;
+  color: #39392D;
+  text-align: left;
+}
+
+/*---------- Premium Pg = photos ----------*/
+#premium-pg {
+  background: #FFF1E6;
+  height: auto;
+}
+
+#premium-pg .row img {
+  border-radius: 5px;
+}
+
+#premium-pg .row img:hover {
+  filter: grayscale(100%);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}
+
+/*---------- Presidential Header ----------*/
+#presidential-header .presidential-title {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("https://images.unsplash.com/photo-1594560913095-8cf34bab82ad?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1349&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#presidential-header .title {
+  font-size: 2rem;
+  color: #39392D;
+  padding-top: 10px;
+}
+
+#presidential-header .subtitle {
+  font-size: 1.2rem;
+  color: #39392D;
+}
+
+@media (max-width: 500px) {
+  #presidential-header .title {
+    font-size: 1.5rem;
+    color: #39392D;
+    padding-top: 30px;
+  }
+
+  #presidential-header .subtitle {
+    font-size: 1rem;
+    line-height: 20px;
+    color: #39392D;
+  }
+}
+
+/*---------- Presidential Title ----------*/
+#presidential-title {
+  background: #FFF1E6;
+  height: auto;
+  padding-top: 8vh;
+  padding-bottom: 5vh;
+}
+
+#presidential-title .title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #39392D;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#presidential-title .subtitle p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #39392D;
+  text-align: left;
+}
+
+#presidential-title .subtitle ul {
+  font-size: 14px;
+  font-weight: 500;
+  color: #39392D;
+  text-align: left;
+}
+
+/*---------- Presidential Pg = photos ----------*/
+#presidential-pg {
+  background: #FFF1E6;
+  height: auto;
+}
+
+#presidential-pg .row img {
+  border-radius: 5px;
+}
+
+#presidential-pg .row img:hover {
   filter: grayscale(100%);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 }
