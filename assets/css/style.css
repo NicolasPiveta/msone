@@ -16,8 +16,10 @@ Artichoke:          #A5A58D
 Black Olives:       #39392D 
 Black Chocolate:    #171712 
 */
+
 html {
-  scroll-behavior: smooth;
+   scroll-behavior: smooth;   
+   scroll-padding-top: 60px; 
 }
 
 /*---------- Commom Styling ----------*/
